@@ -1,0 +1,579 @@
+{
+    "errormessage": null,
+    "emptLineMap": {
+        "col2": [],
+        "col0": [],
+        "col1": []
+    },
+    "userInfo": {
+        "usernumber": "15622282346",
+        "currentID": "15622282346",
+        "citycode": "510",
+        "nettype": "02",
+        "paytype": "1",
+        "provincecode": "051",
+        "loginType": "01",
+        "customid": "5914120537100987",
+        "packageName": "(OCS)双4G微信沃派2.0",
+        "expireTime": "1555402016007",
+        "areaCode": "",
+        "custlvl": "三星用户",
+        "certnum": "4402****4717",
+        "opendate": "20140913180910",
+        "productId": "15622282346",
+        "custName": "赖俊元",
+        "brand": "9",
+        "is_wo": "2",
+        "productType": "01",
+        "packageID": "16163198",
+        "subscrbstat": "开通",
+        "bindCustID": "",
+        "lastLoginTime": "2019-04-16 15:17:11",
+        "defaultFlag": "00",
+        "isINUser": "0000",
+        "mapExtraParam_rls": "01",
+        "custsex": "1",
+        "nickName": "赖俊元",
+        "laststatdate": "",
+        "brand_name": "沃",
+        "is_20": false,
+        "is_36": false,
+        "loginCustid": "5914120537100987",
+        "natureQueryNumberInfo": {
+            "rsp_desc": "正常/成功",
+            "number_info": [],
+            "rsp_code": "0000",
+            "part_id": "1-440204199511294717",
+            "cert_type": "01",
+            "cert_number": "440******717",
+            "cert_name": "赖俊元"
+        },
+        "certtype": "22",
+        "certaddr": "广东省韶关市******",
+        "verifyState": "",
+        "status": "开通"
+    },
+    "separateShow": false,
+    "billList": [
+        {
+            "amount": "36.00",
+            "integrateItemCode": "107",
+            "leve": "",
+            "allLineCount": 3,
+            "usedCount": "--",
+            "discnt": "",
+            "lines": [
+                {
+                    "amount": "36.00",
+                    "integrateItemCode": "713",
+                    "leve": "-",
+                    "allLineCount": 2,
+                    "usedCount": "--",
+                    "discnt": "",
+                    "lines": [
+                        {
+                            "amount": "36.00",
+                            "integrateItemCode": "42330",
+                            "leve": "-",
+                            "allLineCount": 1,
+                            "usedCount": "--",
+                            "discnt": "",
+                            "lines": [],
+                            "lineSize": 1,
+                            "childCount": 0,
+                            "name": "基本月租费按月收取"
+                        }
+                    ],
+                    "lineSize": 2,
+                    "childCount": 1,
+                    "name": "月租费"
+                }
+            ],
+            "lineSize": 2,
+            "childCount": 1,
+            "name": "月固定费"
+        },
+        {
+            "amount": "0.20",
+            "integrateItemCode": "109",
+            "leve": "",
+            "allLineCount": 3,
+            "usedCount": "--",
+            "discnt": "",
+            "lines": [
+                {
+                    "amount": "0.20",
+                    "integrateItemCode": "952",
+                    "leve": "-",
+                    "allLineCount": 2,
+                    "usedCount": "--",
+                    "discnt": "",
+                    "lines": [
+                        {
+                            "amount": "0.20",
+                            "integrateItemCode": "41040",
+                            "leve": "-",
+                            "allLineCount": 1,
+                            "usedCount": "--",
+                            "discnt": "",
+                            "lines": [],
+                            "lineSize": 1,
+                            "childCount": 0,
+                            "name": "智能网帐目-联通在信通信费"
+                        }
+                    ],
+                    "lineSize": 2,
+                    "childCount": 1,
+                    "name": "联通在信通讯费"
+                }
+            ],
+            "lineSize": 2,
+            "childCount": 1,
+            "name": "增值业务费"
+        },
+        {
+            "amount": "41.68",
+            "integrateItemCode": "996",
+            "leve": "",
+            "allLineCount": 3,
+            "usedCount": "--",
+            "discnt": "",
+            "lines": [
+                {
+                    "amount": "41.68",
+                    "integrateItemCode": "969",
+                    "leve": "-",
+                    "allLineCount": 2,
+                    "usedCount": "--",
+                    "discnt": "",
+                    "lines": [
+                        {
+                            "amount": "41.68",
+                            "integrateItemCode": "40143",
+                            "leve": "-",
+                            "allLineCount": 1,
+                            "usedCount": "--",
+                            "discnt": "",
+                            "lines": [],
+                            "lineSize": 1,
+                            "childCount": 0,
+                            "name": "智能网-承诺低消补齐费(当月)"
+                        }
+                    ],
+                    "lineSize": 2,
+                    "childCount": 1,
+                    "name": "低消补收费"
+                }
+            ],
+            "lineSize": 2,
+            "childCount": 1,
+            "name": "调增减项"
+        }
+    ],
+    "datList": [
+        {
+            "dat": "201903",
+            "datfmt": "2019年03月",
+            "cls": "on"
+        },
+        {
+            "dat": "201902",
+            "datfmt": "2019年02月"
+        },
+        {
+            "dat": "201901",
+            "datfmt": "2019年01月"
+        },
+        {
+            "dat": "201812",
+            "datfmt": "2018年12月"
+        },
+        {
+            "dat": "201811",
+            "datfmt": "2018年11月"
+        },
+        {
+            "dat": "201810",
+            "datfmt": "2018年10月"
+        },
+        {
+            "dat": "201809",
+            "datfmt": "2018年09月"
+        },
+        {
+            "dat": "201808",
+            "datfmt": "2018年08月"
+        },
+        {
+            "dat": "201807",
+            "datfmt": "2018年07月"
+        },
+        {
+            "dat": "201806",
+            "datfmt": "2018年06月"
+        },
+        {
+            "dat": "201805",
+            "datfmt": "2018年05月"
+        },
+        {
+            "dat": "201804",
+            "datfmt": "2018年04月"
+        }
+    ],
+    "isDiscount": "",
+    "result": {
+        "balance": "0.00",
+        "areaCode": "",
+        "scoreInfo": [
+            {
+                "rsRvScoreAdjust": "0",
+                "rsRvScore3": "0",
+                "rsRvScore2": "0",
+                "rsRvScore1": "0",
+                "scoreUseValue": "0",
+                "scoreIdleValue": "1278"
+            }
+        ],
+        "allFee": "77.88",
+        "billInfo": [
+            {
+                "fee": "36.00",
+                "balance": "",
+                "parentItemCode": "-1",
+                "integrateItemCode": "107",
+                "integrateItem": "月固定费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "0.20",
+                "balance": "",
+                "parentItemCode": "-1",
+                "integrateItemCode": "109",
+                "integrateItem": "增值业务费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "36.00",
+                "balance": "",
+                "parentItemCode": "107",
+                "integrateItemCode": "713",
+                "integrateItem": "月租费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "0.20",
+                "balance": "",
+                "parentItemCode": "109",
+                "integrateItemCode": "952",
+                "integrateItem": "联通在信通讯费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "41.68",
+                "balance": "",
+                "parentItemCode": "996",
+                "integrateItemCode": "969",
+                "integrateItem": "低消补收费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "41.68",
+                "balance": "",
+                "parentItemCode": "-1",
+                "integrateItemCode": "996",
+                "integrateItem": "调增减项",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "41.68",
+                "balance": "",
+                "parentItemCode": "969",
+                "integrateItemCode": "40143",
+                "integrateItem": "智能网-承诺低消补齐费(当月)",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "0.20",
+                "balance": "",
+                "parentItemCode": "952",
+                "integrateItemCode": "41040",
+                "integrateItem": "智能网帐目-联通在信通信费",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            },
+            {
+                "fee": "36.00",
+                "balance": "",
+                "parentItemCode": "713",
+                "integrateItemCode": "42330",
+                "integrateItem": "基本月租费按月收取",
+                "usedValue": "",
+                "adjustAfter": "",
+                "discnt": "",
+                "adjustBefore": ""
+            }
+        ],
+        "cycleId": "201903",
+        "userId": "2014090266125426",
+        "memberBillInfo": [
+            {
+                "memberNumber": "15622282346",
+                "billDetailInfo": [
+                    {
+                        "fee": "36.00",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "107",
+                        "integrateItem": "月固定费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.20",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "109",
+                        "integrateItem": "增值业务费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "36.00",
+                        "balance": "",
+                        "parentItemCode": "107",
+                        "integrateItemCode": "713",
+                        "integrateItem": "月租费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.20",
+                        "balance": "",
+                        "parentItemCode": "109",
+                        "integrateItemCode": "952",
+                        "integrateItem": "联通在信通讯费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "41.68",
+                        "balance": "",
+                        "parentItemCode": "996",
+                        "integrateItemCode": "969",
+                        "integrateItem": "低消补收费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "41.68",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "996",
+                        "integrateItem": "调增减项",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "41.68",
+                        "balance": "",
+                        "parentItemCode": "969",
+                        "integrateItemCode": "40143",
+                        "integrateItem": "智能网-承诺低消补齐费(当月)",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.20",
+                        "balance": "",
+                        "parentItemCode": "952",
+                        "integrateItemCode": "41040",
+                        "integrateItem": "智能网帐目-联通在信通信费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "36.00",
+                        "balance": "",
+                        "parentItemCode": "713",
+                        "integrateItemCode": "42330",
+                        "integrateItem": "基本月租费按月收取",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    }
+                ],
+                "memberTotalFee": "77.88"
+            },
+            {
+                "memberNumber": "02000442348",
+                "billDetailInfo": [
+                    {
+                        "fee": "10.00",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "101",
+                        "integrateItem": "代收费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.00",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "102",
+                        "integrateItem": "上网费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "90.00",
+                        "balance": "",
+                        "parentItemCode": "-1",
+                        "integrateItemCode": "107",
+                        "integrateItem": "月固定费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "10.00",
+                        "balance": "",
+                        "parentItemCode": "101",
+                        "integrateItemCode": "202",
+                        "integrateItem": "宽带商务代收费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "90.00",
+                        "balance": "",
+                        "parentItemCode": "107",
+                        "integrateItemCode": "209",
+                        "integrateItem": "基本月租费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.00",
+                        "balance": "",
+                        "parentItemCode": "102",
+                        "integrateItemCode": "953",
+                        "integrateItem": "上网通信流量",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "90.00",
+                        "balance": "",
+                        "parentItemCode": "209",
+                        "integrateItemCode": "26007",
+                        "integrateItem": "[固网]基本月租",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "0.00",
+                        "balance": "",
+                        "parentItemCode": "953",
+                        "integrateItemCode": "26875",
+                        "integrateItem": "[固网]上网通信流量",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    },
+                    {
+                        "fee": "10.00",
+                        "balance": "",
+                        "parentItemCode": "202",
+                        "integrateItemCode": "26965",
+                        "integrateItem": "IPTV月租费",
+                        "usedValue": "",
+                        "adjustAfter": "",
+                        "discnt": "",
+                        "adjustBefore": ""
+                    }
+                ],
+                "memberTotalFee": "100.00"
+            }
+        ],
+        "writeOffFee": "77.88",
+        "recvFeeUsed": "77.88",
+        "presentFeeUsed": "0.00",
+        "resultMemo": "",
+        "adjustFee": "0.00",
+        "backFee": "0.00",
+        "actionFeeUsed": "0.00",
+        "derateFee": "0.00",
+        "serialNumber": "15622282346",
+        "success": true,
+        "busiOrder": "BUSI021904160946370160077905",
+        "respCode": "0000",
+        "respDesc": "成功"
+    },
+    "score": {
+        "usableScore": 1278,
+        "curAddScore": 0,
+        "usedScore": 0
+    },
+    "success": true,
+    "curDate": "201903",
+    "queryTime": "查询时间：2019年04月16日 15:44:24",
+    "isForTotal": "",
+    "LoginType": "01",
+    "groupInfo": null
+}

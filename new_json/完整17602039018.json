@@ -1,0 +1,179 @@
+{
+    "title": "\u767b\u5f55",
+    "resultCode": "0000",
+    "cookies": {
+        "ckuuid": "ff34a6e39e329beb265d3306a5c71a8d",
+        "JUT": "sbN/F9/O7SWdU+UHXy4myvPNabJMWoSu1TjTh8iTOYqOVpjTeQZwxFR3j/yBVDAXyMZ2WWPvNFtZZ7UPMgYth5HbadSI/ebrUaSbE5Z3Lb/1S8fEDTtDqXOJ/8TobmEP1jPzmCO4VBAoZpQHGkpGxvKTrjOr5g251X3PXhjoMr+YQ4AGN0raHhXoR1eVp6TW8m4LFmGlBiRa55OzLfqyT4N2naZgwh20KxMHDzLHBDr9/hj44ptzXij62ZC28Lr5XpXbgRKPB4MgW+bI6REye1r0iiVi1DhrrPm11Vvfsi7lZy+KYvQt2H9zRWbv15H7uj2u0T03l/pR2lHKCfACJvMm01R9KuxvHmOxQSYaI3gx+WCReDcPRl7ZuSB9/DWVDqzTgYU8kHxyQd7pE+K9ZsN7Q6TBN4PkAQXkUXfKsnvvlFeYPRAc8wR97Rjf2lmGLVKxuqkn9nPTcevwTbbe1tekjpjsk4OfrzybSEP2D6N9LwwAjVeQseISBoT9R/hhmPaJjYvLknYf30w+USxs6B8j7rcK6SsQhUK7Q4zcc4o=rZlRdviQL1OPB7AFM9hcEQ==",
+        "_uop_id": "bcfbb33a6e88a9fbba58d507d7f5f919",
+        "piw": "%7B%22login_name%22%3A%22176****9018%22%2C%22nickName%22%3A%22%E9%83%AD%E5%88%A9%E5%AE%8F%22%2C%22rme%22%3A%7B%22ac%22%3A%22%22%2C%22at%22%3A%22%22%2C%22pt%22%3A%2201%22%2C%22u%22%3A%2217602039018%22%7D%2C%22verifyState%22%3A%22%22%7D",
+        "e3route": "b2f9443090b7a69d0ccb08b84a7cb0ce26dfd9a4",
+        "route": "f6580975dacd2642305771459ba78210",
+        "JSESSIONID": "84F6CDFFA18D983EC5066690BC01DFA9"
+    },
+    "msg": "\u767b\u5f55\u6210\u529f",
+    "phoneNum": "17602039018",
+    "info": {
+        "billInfo": {
+            "billInfos": [
+                {
+                    "allFee": "56.00",
+                    "billMonth": "201906",
+                    "billList": [
+                        {
+                            "name": "\u6708\u56fa\u5b9a\u8d39",
+                            "value": "19.00"
+                        },
+                        {
+                            "name": "\u8bed\u97f3\u901a\u8bdd\u8d39",
+                            "value": "6.00"
+                        },
+                        {
+                            "name": "\u4e0a\u7f51\u8d39",
+                            "value": "31.00"
+                        }
+                    ]
+                },
+                {
+                    "allFee": "58.00",
+                    "billMonth": "201905",
+                    "billList": [
+                        {
+                            "name": "\u6708\u56fa\u5b9a\u8d39",
+                            "value": "19.00"
+                        },
+                        {
+                            "name": "\u8bed\u97f3\u901a\u8bdd\u8d39",
+                            "value": "0.10"
+                        },
+                        {
+                            "name": "\u4e0a\u7f51\u8d39",
+                            "value": "38.90"
+                        }
+                    ]
+                },
+                {
+                    "allFee": "50.10",
+                    "billMonth": "201904",
+                    "billList": [
+                        {
+                            "name": "\u6708\u56fa\u5b9a\u8d39",
+                            "value": "19.00"
+                        },
+                        {
+                            "name": "\u4e0a\u7f51\u8d39",
+                            "value": "31.10"
+                        }
+                    ]
+                },
+                {
+                    "allFee": "56.00",
+                    "billMonth": "201903",
+                    "billList": [
+                        {
+                            "name": "\u6708\u56fa\u5b9a\u8d39",
+                            "value": "19.00"
+                        },
+                        {
+                            "name": "\u4e0a\u7f51\u8d39",
+                            "value": "37.00"
+                        }
+                    ]
+                },
+                {
+                    "allFee": "49.00",
+                    "billMonth": "201902",
+                    "billList": [
+                        {
+                            "name": "\u6708\u56fa\u5b9a\u8d39",
+                            "value": "19.00"
+                        },
+                        {
+                            "name": "\u4e0a\u7f51\u8d39",
+                            "value": "30.00"
+                        }
+                    ]
+                }
+            ],
+            "billMonthCount": "5"
+        },
+        "packageInfo": {
+            "packageName": "\u817e\u8baf\u5927\u738b\u5361",
+            "flowInfo": [],
+            "voiceInfo": [
+                {
+                    "policyName": "\u8bed\u97f3",
+                    "totalDuration": "100",
+                    "usedValue": "31",
+                    "canUseValue": "69"
+                }
+            ],
+            "smsInfo": [
+                {
+                    "totalCount": "300",
+                    "usedValue": "1",
+                    "canUseValue": "299",
+                    "canUsedPercent": "100"
+                }
+            ],
+            "productFee": "19"
+        },
+        "valueAddedInfo": [
+            {
+                "queryDateScope": "20190201/20190228",
+                "addValueData": [
+                    {
+                        "workType": "\u672a\u77e5",
+                        "productName": "\u589e\u503c\u4e1a\u52a1",
+                        "orderDate": "2019-02-02 00:14:39",
+                        "useDateScope": "0\u79d2",
+                        "type": "\u5176\u4ed6",
+                        "fee": "5.00"
+                    }
+                ]
+            },
+            {
+                "queryDateScope": "20190301/20190331",
+                "addValueData": [
+                    {
+                        "workType": "\u672a\u77e5",
+                        "productName": "\u589e\u503c\u4e1a\u52a1",
+                        "orderDate": "2019-03-02 00:12:37",
+                        "useDateScope": "0\u79d2",
+                        "type": "\u5176\u4ed6",
+                        "fee": "5.00"
+                    }
+                ]
+            },
+            {
+                "queryDateScope": "20190401/20190430",
+                "addValueData": [
+                    {
+                        "workType": "\u672a\u77e5",
+                        "productName": "\u589e\u503c\u4e1a\u52a1",
+                        "orderDate": "2019-04-02 00:11:00",
+                        "useDateScope": "0\u79d2",
+                        "type": "\u5176\u4ed6",
+                        "fee": "5.00"
+                    }
+                ]
+            },
+            {
+                "queryDateScope": "20190501/20190531",
+                "addValueData": [
+                    {
+                        "workType": "\u672a\u77e5",
+                        "productName": "\u589e\u503c\u4e1a\u52a1",
+                        "orderDate": "2019-05-02 00:15:08",
+                        "useDateScope": "0\u79d2",
+                        "type": "\u5176\u4ed6",
+                        "fee": "5.00"
+                    }
+                ]
+            },
+            {
+                "queryDateScope": "20190601/20190630",
+                "addValueData": []
+            }
+        ]
+    }
+}

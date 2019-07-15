@@ -1,0 +1,215 @@
+{
+    "data": [
+        {
+            "arr": [
+                {
+                    "remark": null,
+                    "mealName": "查网龄送流量连续3个月每月赠送5GB国内通用流量（5年以上10年以下网龄用户专用）",
+                    "planId": "prod.10086000025076",
+                    "expireFlag": "0",
+                    "resInfos": [
+                        {
+                            "remark": null,
+                            "resName": null,
+                            "resCode": "04",
+                            "isMultiTerm": "1",
+                            "secResInfos": [
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "5242880",
+                                        "useMeal": "1031962",
+                                        "balMeal": "4210918",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "国内2/3/4G流量",
+                                    "secResourcesLimitType": "01",
+                                    "unLimitType": "01",
+                                    "limitRes": null,
+                                    "limitRate": "N"
+                                }
+                            ]
+                        }
+                    ],
+                    "mealInfoUps": []
+                },
+                {
+                    "remark": null,
+                    "mealName": "100M国内通用流量",
+                    "planId": "prod.10086000004474",
+                    "expireFlag": "0",
+                    "resInfos": [
+                        {
+                            "remark": null,
+                            "resName": null,
+                            "resCode": "04",
+                            "isMultiTerm": "1",
+                            "secResInfos": [
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "0",
+                                        "useMeal": "0",
+                                        "balMeal": "0",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "国内2/3/4G流量",
+                                    "secResourcesLimitType": "01",
+                                    "unLimitType": "01",
+                                    "limitRes": null,
+                                    "limitRate": "N"
+                                },
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "102400",
+                                        "useMeal": "0",
+                                        "balMeal": "102400",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "国内2/3/4G流量",
+                                    "secResourcesLimitType": "01",
+                                    "unLimitType": "01",
+                                    "limitRes": null,
+                                    "limitRate": "N"
+                                }
+                            ]
+                        }
+                    ],
+                    "mealInfoUps": []
+                },
+                {
+                    "remark": null,
+                    "mealName": "国内闲时流量1G（赠12个月）",
+                    "planId": "prod.10086000004475",
+                    "expireFlag": "0",
+                    "resInfos": [
+                        {
+                            "remark": null,
+                            "resName": null,
+                            "resCode": "04",
+                            "isMultiTerm": "1",
+                            "secResInfos": [
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "1048576",
+                                        "useMeal": "425",
+                                        "balMeal": "1048151",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "国内2/3/4G闲时流量",
+                                    "secResourcesLimitType": "02",
+                                    "unLimitType": "01",
+                                    "limitRes": null,
+                                    "limitRate": "N"
+                                }
+                            ]
+                        }
+                    ],
+                    "mealInfoUps": []
+                },
+                {
+                    "remark": null,
+                    "mealName": "国内通用流量5GB",
+                    "planId": "prod.10086000014204",
+                    "expireFlag": "0",
+                    "resInfos": [
+                        {
+                            "remark": null,
+                            "resName": null,
+                            "resCode": "04",
+                            "isMultiTerm": "1",
+                            "secResInfos": [
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "5242880",
+                                        "useMeal": "0",
+                                        "balMeal": "5242880",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "国内2/3/4G高速流量",
+                                    "secResourcesLimitType": "01",
+                                    "unLimitType": "02",
+                                    "limitRes": "5",
+                                    "limitRate": "N"
+                                }
+                            ]
+                        }
+                    ],
+                    "mealInfoUps": []
+                },
+                {
+                    "remark": null,
+                    "mealName": "每月2GB网易定向流量",
+                    "planId": "prod.10086000018281",
+                    "expireFlag": "0",
+                    "resInfos": [
+                        {
+                            "remark": null,
+                            "resName": null,
+                            "resCode": "04",
+                            "isMultiTerm": "1",
+                            "secResInfos": [
+                                {
+                                    "remark": null,
+                                    "resConInfo": {
+                                        "remark": null,
+                                        "totalMeal": "2097152",
+                                        "useMeal": "0",
+                                        "balMeal": "2097152",
+                                        "unit": "03",
+                                        "validDate": "20190627205547"
+                                    },
+                                    "resConCode": null,
+                                    "resConName": "10-国内2/3/4G定向流量",
+                                    "secResourcesLimitType": "02",
+                                    "unLimitType": "01",
+                                    "limitRes": null,
+                                    "limitRate": "N"
+                                }
+                            ]
+                        }
+                    ],
+                    "mealInfoUps": []
+                }
+            ],
+            "type": "1"
+        },
+        {
+            "arr": [
+                {
+                    "code": "01",
+                    "sources": [
+                        {
+                            "classify": "04",
+                            "usageAmount": "15",
+                            "unit": "01",
+                            "charging": "3.75"
+                        }
+                    ]
+                }
+            ],
+            "type": "2"
+        }
+    ],
+    "retCode": "000000",
+    "retMsg": "成功",
+    "sOperTime": "20190627205547"
+}

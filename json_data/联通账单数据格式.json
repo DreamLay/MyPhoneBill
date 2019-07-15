@@ -1,0 +1,30 @@
+{
+    "userInfo":{
+        "userId":"2014090266125426",
+        "packageName":"(OCS)双4G微信沃派2.0",
+        "opendate":"20140913180910",
+        "nickName":"赖俊元",
+        "certaddr":"广东省韶关市******",
+        "lastLoginTime":"2019-04-23 14:20:25",
+        "part_id":"1-440204199511294717",
+        "status":"开通"
+    },
+    "billInfo":{
+        "allFee":"77.88",
+        "billMonth":"201903",
+        "billList":[
+            {
+                "key":"月固定费",
+                "amount":"36.00"
+            },
+            {
+                "key":"增值业务费",
+                "amount":"0.20"
+            },
+            {
+                "key":"调增减项",
+                "amount":"41.68"
+            }
+        ]
+    }
+}
