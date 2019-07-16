@@ -56,7 +56,8 @@ class Parse():
 
 
     def parseFlowCmcc(self):
-
+        
+        
         content_dict = json.loads(self.content)
 
         flowInfo = []
@@ -75,26 +76,27 @@ class Parse():
 
         
         voiceInfo = []
-        for item in content_dict['voiceListCombo']:
-            if float(item['addUpUpper']) > 0:
-                voiceInfo.append({
-                    'policyName':item['addUpItemName'],
-                    'totalDuration': item['addUpUpper'],
-                    'usedValue': item['xusedValue'],
-                    'canUseValue': item['xCanUseValue'],
-                    # 'canUsedPercent': item['usedPercent']
-                })
+        if 'voiceListCombo' in content_dict:
+            for item in content_dict['voiceListCombo']:
+                if float(item['addUpUpper']) > 0:
+                    voiceInfo.append({
+                        'policyName':item['addUpItemName'],
+                        'totalDuration': item['addUpUpper'],
+                        'usedValue': item['xusedValue'],
+                        'canUseValue': item['xCanUseValue'],
+                        # 'canUsedPercent': item['usedPercent']
+                    })
 
         smsInfo = []
-
-        for item in content_dict['smsListCombo']:
-            if float(item['addUpUpper']) > 0:
-                smsInfo.append({
-                    'totalCount': item['addUpUpper'],
-                    'usedValue': item['xusedValue'],
-                    'canUseValue': item['xCanUseValue'],
-                    'canUsedPercent': item['usedPercent']
-                })
+        if 'smsListCombo' in content_dict:
+            for item in content_dict['smsListCombo']:
+                if float(item['addUpUpper']) > 0:
+                    smsInfo.append({
+                        'totalCount': item['addUpUpper'],
+                        'usedValue': item['xusedValue'],
+                        'canUseValue': item['xCanUseValue'],
+                        'canUsedPercent': item['usedPercent']
+                    })
             
         
             
@@ -116,15 +118,16 @@ class Parse():
         content_dict = json.loads(self.content)
             
         flowInfo = []
-        for item in content_dict['flowListCombo']:
-            if item['elemType'] == '3' and '赠' not in item['addUpItemName'] and '赠' not in item['feePolicyName'] and float(item['addUpUpper']) > 0:
-                if '免费' not in item['addUpItemName'] and '免费' not in item['feePolicyName']:
-                    flowInfo.append({
-                            'policyName':item['feePolicyName'],
-                            'typeName':item['addUpItemName'],
-                            'totalValue': item['addUpUpper'] + 'MB',
-                            'usedValue':item['xusedValue'] + 'MB'
-                        })
+        if 'flowListCombo' in content_dict:
+            for item in content_dict['flowListCombo']:
+                if item['elemType'] == '3' and '赠' not in item['addUpItemName'] and '赠' not in item['feePolicyName'] and float(item['addUpUpper']) > 0:
+                    if '免费' not in item['addUpItemName'] and '免费' not in item['feePolicyName']:
+                        flowInfo.append({
+                                'policyName':item['feePolicyName'],
+                                'typeName':item['addUpItemName'],
+                                'totalValue': item['addUpUpper'] + 'MB',
+                                'usedValue':item['xusedValue'] + 'MB'
+                            })
         return flowInfo
 
 
@@ -230,9 +233,9 @@ class Parse():
         return addValues
 
 
-if __name__ == "__main__":
-    with open('./json_data/移动流量.json', 'r') as f:
-        content = f.read()
+# if __name__ == "__main__":
+#     with open('./json_data/移动流量.json', 'r') as f:
+#         content = f.read()
 
-    res = Parse(content).parseFlowChina()
-    print(json.dumps(res))
+#     res = Parse(content).parseFlowChina()
+#     print(json.dumps(res))
