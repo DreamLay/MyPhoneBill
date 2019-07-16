@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import time, json, re
+import time, json, re, os
 import requests
 from funtion.parse import Parse
 from datetime import datetime
@@ -21,6 +21,9 @@ class CMCC():
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
             "Origin": "http://iservice.10010.com"
         }
+        self.today = time.strftime("%Y%m%d")
+        if not os.path.exists('./jsonFilesTmpBak/%s/' % self.today):
+            os.makedirs('./jsonFilesTmpBak/%s/' % self.today)
         self.proxy = {'http': proxy,'https': proxy} if proxy else None
 
 
@@ -132,20 +135,22 @@ class CMCC():
 
     # 获取套餐信息
     def getPackageData(self, cookies):
-
+        
         now = str(int(round(time.time() * 1000)))
         self.headers['Referer'] = "https://iservice.10010.com/e4/skip.html?menuCode=000100040001"
         getPackageData_url = "https://iservice.10010.com/e3/static/query/newQueryLeavePackageData?_=%s&accessURL=https://iservice.10010.com/e4/skip.html?menuCode=000100040001" % now
         getPackageData_res = requests.post(getPackageData_url, proxies=self.proxy, headers=self.headers, cookies=cookies ,verify=False)
         data = getPackageData_res.content.decode()
-        # with open('./new_json/套餐信息.json', 'w') as f:
-        #     f.write(data)
+        with open("./jsonFilesTmpBak/%s/%s_CMCC_PackageDataSource_%s" % (self.today, self.account, time.strftime("%H%M%S")), 'w') as f:
+            f.write(data)
         packageInfo = Parse(data).parseFlowCmcc()
         if not len(packageInfo['flowInfo']):
             try:
                 familyTypeUrl = "https://iservice.10010.com/e3/static/wohome/combospare?_=%s" % now
                 familyTypeRes = requests.post(familyTypeUrl, proxies=self.proxy, headers=self.headers, cookies=cookies ,verify=False)
                 familyTypeData = familyTypeRes.content.decode()
+                with open("./jsonFilesTmpBak/%s/%s_CMCC_PackageDataSource_%s" % (self.today, self.account, time.strftime("%H%M%S")), 'w') as f:
+                    f.write(familyTypeData)
                 packageInfo['flowInfo'] = Parse(familyTypeData).parseFamilyTypeFlowCmcc()
             except:
                 pass
@@ -169,6 +174,7 @@ class CMCC():
         callValueAdded_url = 'https://iservice.10010.com/e3/static/query/callValueAdded?_=%s&accessURL=https://iservice.10010.com/e4/query/basic/callValueAdded_iframe.html&menuid=000100030003' % now
 
         valueAddedInfos = []
+        totalData = ""
         for (timeQuantumH, timeQuantumT) in timeQuantums:
             res3 = s.post(
                 callValueAdded_url, proxies=self.proxy, 
@@ -179,9 +185,11 @@ class CMCC():
                     },
                 verify=False)
             data = res3.content.decode()
+            totalData += data + '\n\n\n'
             valueAddedInfo = Parse(data).parseAddValueCmcc()
             valueAddedInfos.append(valueAddedInfo)
-
+        with open("./jsonFilesTmpBak/%s/%s_CMCC_ValueAddedDataSource_%s" % (self.today, self.account, time.strftime("%H%M%S")), 'w') as f:
+            f.write(data)
         
         return valueAddedInfos
 

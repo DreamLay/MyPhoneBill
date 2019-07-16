@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import requests, json, time,re
+import requests, json, time,re, os
 from datetime import datetime
 from selenium import webdriver
 from http import cookiejar
@@ -133,6 +133,9 @@ class ChinaMobile():
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15",
             "Referer": "https://login.10086.cn/html/login/login.html?channelID=12002&backUrl=https://shop.10086.cn/i/",
         }
+        self.today = time.strftime("%Y%m%d")
+        if not os.path.exists('./jsonFilesTmpBak/%s/' % self.today):
+            os.makedirs('./jsonFilesTmpBak/%s/' % self.today)
         self.proxy = {'http': proxy,'https': proxy} if proxy else None
 
 
@@ -171,11 +174,15 @@ class ChinaMobile():
         package_url = 'https://shop.10086.cn/i/v1/cust/mergecust/%s?_=%s' % (self.phone_num, now)
         flow_res = requests.get(flow_url, proxies=self.proxy, headers=self.headers, cookies=cookies, verify=False)
         package_res = requests.get(package_url, proxies=self.proxy, headers=self.headers, cookies=cookies, verify=False)
-        
+
+        with open("./jsonFilesTmpBak/%s/%s_china_PackageDataSource_%s" % (self.today, self.phone_num, time.strftime("%H%M%S")), 'w') as f:
+            f.write(flow_res.content.decode())
         info = Parse(flow_res.content.decode()).parseFlowChina()
         
         try:
             data = package_res.content.decode()
+            with open("./jsonFilesTmpBak/%s/%s_china_PersonInfoDataSource_%s" % (self.today, self.phone_num, time.strftime("%H%M%S")), 'w') as f:
+                f.write(data)
             data_dict = json.loads(data)
             packageName = data_dict['data']['curPlanQryOut']['brandName'] + ' | ' + data_dict['data']['curPlanQryOut']['nextPlanName']
             info['packageName'] = packageName
