@@ -4,3 +4,4 @@ __pycache__
 .DS_Store
 /json_data
 /new_json
+/jsonFilesTmpBak
