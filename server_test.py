@@ -2,16 +2,16 @@
 import sys, json, time, os, random, string, requests, traceback, logging
 from flask import Flask, request, jsonify, session
 from china_mobile import DriverForChinaMobile, ChinaMobile
-from test_cmcc import CMCC
+from CMCC_main import CMCC
 from datetime import timedelta
 from datetime import datetime
 from china_mobile import last_month_date
 from redis import *
-from funtion import Proxy
-username = '15622282346'
+from funtion.funtions import Proxy
+username = '13428278874'
 # username = input("手机号：")
 password = input("密码：")
-operator = "1"
+operator = "0"
 
 
 def send_smscode(pool=None):

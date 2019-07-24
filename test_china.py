@@ -2,6 +2,11 @@ import base64, requests, time, json
 import rsa, execjs
 
 
+
+# def printRes(func):
+#     def test():
+
+
 class Encryption():
 
 
@@ -99,23 +104,11 @@ class ChinaMobile():
         s = requests.session()
 
         now = str(int(round(time.time() * 1000)))
-        # timestamp_url = 'https://login.10086.cn/loadSendflag.htm?timestamp='
-        # timestamp_url_res = s.get(timestamp_url, headers=self.headers)
-        # self.cookies = {**self.cookies, **timestamp_url_res.cookies.get_dict()}
+        timestamp_url = 'https://login.10086.cn/loadSendflag.htm?timestamp='
+        timestamp_url_res = s.get(timestamp_url, headers=self.headers)
+        self.cookies = {**self.cookies, **timestamp_url_res.cookies.get_dict()}
 
 
-        captchazh_res = s.get('https://login.10086.cn/captchazh.htm?type=12', headers=self.headers)
-        self.cookies = {**self.cookies, **captchazh_res.cookies.get_dict()}
-
-
-        genqr_res = s.get('https://login.10086.cn/genqr.htm', headers=self.headers)
-        self.cookies = {**self.cookies, **genqr_res.cookies.get_dict()}
-
-
-        # timestamp_url_res2 = s.get(timestamp_url, headers=self.headers)
-        # self.cookies = {**self.cookies, **timestamp_url_res2.cookies.get_dict()}
-
-        # self.cookies = {**self.cookies, **cookies}
         login_url  = 'https://login.10086.cn/login.htm?%s'
         # account = '13824559862'
         # smsCode = '473940'
@@ -127,6 +120,7 @@ class ChinaMobile():
 
         params = '&'.join(["%s=%s" % (i, getData[i]) for i in getData])
         login_res = s.get(login_url % params, headers=self.headers, cookies=self.cookies)
+        print(login_res)
         uid = json.loads(login_res.content.decode())['uid']
         artifact = json.loads(login_res.content.decode())['artifact']
         self.cookies = {**self.cookies, **login_res.cookies.get_dict()}
@@ -137,6 +131,10 @@ class ChinaMobile():
         jsessionid_res = s.get('https://shop.10086.cn/i/v1/auth/loginfo?_=%s' % now, headers=self.headers, cookies=self.cookies)
         self.cookies = {**self.cookies, **jsessionid_res.cookies.get_dict()}
         print(self.cookies)
+
+        i = s.get('https://shop.10086.cn/i/v1/res/numarea/%s?_=%s' % (self.account, now), headers=self.headers,cookies=self.cookies)
+        print(i.content.decode())
+
 
         # "WT_FPC=id=" + a + ":lv=" + h.getTime().toString() + ":ss=" + g.getTime().toString() + "
 
@@ -165,6 +163,7 @@ class ChinaMobile():
         self.cookies = {**self.cookies, **timestamp_res.cookies.get_dict()}
 
 
+
         # captchazh_res = s.get('https://login.10086.cn/captchazh.htm?type=12', headers=self.headers)
         # self.cookies = {**self.cookies, **captchazh_res.cookies.get_dict()}
 
@@ -187,15 +186,17 @@ class ChinaMobile():
         # chkNumberAction_res = s.post(chkNumberAction_url, data=data, headers=self.headers, cookies=self.cookies)
         # self.cookies = {**self.cookies, **chkNumberAction_res.cookies.get_dict()}
         # print(chkNumberAction_res.content.decode())
+
+
         
-        # loadToken_url = 'https://login.10086.cn/loadToken.action'
-        # loadToken_res = s.post(loadToken_url, data=dict(userName=self.account), headers=self.headers, cookies=self.cookies)
-        # self.headers['Xa-before'] = json.loads(loadToken_res.content.decode())['result']
-        # self.cookies = {**self.cookies, **loadToken_res.cookies.get_dict()}
-        # print(loadToken_res.content.decode())
+        loadToken_url = 'https://login.10086.cn/loadToken.action'
+        loadToken_res = s.post(loadToken_url, data=dict(userName=self.account), headers=self.headers, cookies=self.cookies)
+        self.headers['Xa-before'] = json.loads(loadToken_res.content.decode())['result']
+        self.cookies = {**self.cookies, **loadToken_res.cookies.get_dict()}
+        print(loadToken_res.content.decode())
+
 
         sendRandomCodeAction_url = 'https://login.10086.cn/sendRandomCodeAction.action'
-        # print(self.headers)
         sendRandomCodeAction_res = s.post(sendRandomCodeAction_url, data=dict(userName=self.account,type='01',channelID='12002'), headers=self.headers, cookies=self.cookies)
         self.cookies = {**self.cookies, **sendRandomCodeAction_res.cookies.get_dict()}
         print(sendRandomCodeAction_res.content.decode())
@@ -206,9 +207,9 @@ class ChinaMobile():
 
 if __name__ == "__main__":
 
-    # cookies = ChinaMobile('13560046649').sendSMSCode()
+    # cookies = ChinaMobile('13824559862').sendSMSCode()
     smsCode = input('验证码: ')
-    s = ChinaMobile('13719246701').login(smsCode)
+    s = ChinaMobile('13824559862').login(smsCode)
     # print(cookies)
     # print('----------------------------')
     # print('\n\n')
@@ -262,3 +263,18 @@ if __name__ == "__main__":
 # Set-Cookie: route=f6580975dacd2642305771459ba78210; Path=/
 # Set-Cookie: e3route=a37bb3a7cef8d70bca838589b4ce5db9185a6d2d; Path=/; HttpOnly
 # Set-Cookie: JSESSIONID=C2F0CE776E402748A0D6E51C27055473; Path=/e3; HttpOnly
+
+# inx=myorders; 
+# inx2=returnorderqry; 
+# ssologinprovince=200; 
+# CmLocation=200|753; 
+# CmProvid=bj;
+# WT_FPC=id=211dba225b0b931071b1563952222011:lv=1563952222011:ss=1563952222011;
+#  collect_id=t7oftdjmfrt5kc0kfd3wp5caienjct0w;   ****
+#  c=519bce6a86bd45ac911b4362071d9f07;
+#  cmccssotoken=519bce6a86bd45ac911b4362071d9f07@.10086.cn;
+#  is_login=true;
+#  jsessionid-echd-cpt-cmcc-jt=BBA9FCB42C4B275CB043756F1C9F7BCA;
+#  verifyCode=0907106c7a89b7ccbc9a40859ee41ad0a35073fd;
+#  sendflag=20190724150934004547; CaptchaCode=WeqZUJ;
+#  lgToken=94045443820d43e893c4555e10706c33
